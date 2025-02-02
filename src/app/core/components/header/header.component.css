@@ -1,0 +1,160 @@
+/* Início Header Menu */
+header {
+  background-color: #201f25;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  padding: 25px 20px;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+/* Logo */
+.logo {
+  font-size: 32px;
+  color: #FF9091;
+  font-weight: normal;
+  margin-top: -8px;
+  font-family: 'MRRobot', 'Raleway', sans-serif;
+  letter-spacing: 5px;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+/* Botão de menu mobile */
+.menuMobile {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.menuMobile div {
+  background-color: #fff;
+  height: 2px;
+  width: 35px;
+  margin: 5px 0;
+}
+
+/* Menu desktop */
+.menu ul {
+  display: flex;
+}
+
+.menu ul li {
+  list-style-type: none;
+  position: relative;
+  margin-left: 15px;
+}
+
+.menu ul li::after {
+  content: '';
+  width: 102%;
+  position: absolute;
+  left: 0;
+  height: 4px;
+  bottom: -31px;
+  transition: 0.2s;
+}
+
+.menu ul li:hover::after {
+  background-color: #fff;
+}
+
+.menu ul li a:hover {
+  color: #ff9091;
+}
+
+.menu ul a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 5px;
+  cursor: pointer;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 750px) {
+  .logo {
+    margin-top: 0;
+  }
+
+  .menuMobile {
+    display: flex; /* Exibe o botão do menu mobile */
+  }
+
+  /* O menu, por padrão, oculto */
+  .menu ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: #201f25;
+    padding: 0 15px;
+  }
+
+  /* Exibe o menu quando a classe 'active' estiver presente */
+  .menu ul.active {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu ul li {
+    margin-left: 0;
+    padding: 15px 0 5px;
+    margin-bottom: 20px;
+  }
+
+  .menu ul li::after {
+    bottom: 5px;
+    width: 100px;
+  }
+
+  .menu ul li a {
+    display: block;
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+
+  #banner {
+    height: calc(60vh - 76px);
+  }
+}
+
+/* Responsividade para dispositivos extra pequenos */
+@media (max-width: 374px) {
+  header {
+    padding: 20px 10px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .menu ul {
+    top: 70px;
+    padding: 20px 10px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+}
+/* Fim Header Menu */
