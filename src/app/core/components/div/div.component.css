@@ -1,0 +1,7 @@
+/*Início da Estilização do Divisor*/
+.divisor{
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #E39600 0%, #EA4C89 30.21%, #8F48EB 66.67%, #1DA1F2 100%);
+}
+/*Fim da Estilização do Divisor*/
