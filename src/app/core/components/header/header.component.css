@@ -6,6 +6,11 @@ header {
   color: #fff;
   padding: 25px 20px;
 }
+
+header p {
+  margin: 0 !important;
+}
+
 header .container {
   display: flex;
   justify-content: space-between;
@@ -17,17 +22,13 @@ header .container {
   font-size: 32px;
   color: #FF9091;
   font-weight: normal;
-  margin-top: -8px;
   font-family: 'MRRobot', 'Raleway', sans-serif;
   letter-spacing: 5px;
   margin-right: 15px;
   display: flex;
   align-items: center;
 }
-#liza{
-  font-family: 'Lato';
-  text-transform: capitalize;
-}
+
 /* Menu */
 .menu {
   display: flex;

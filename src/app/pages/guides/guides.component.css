@@ -1,0 +1,31 @@
+.guides {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #f3f5f3;
+  border-top: 1px solid #FF9091;
+}
+
+.guides__container {
+  max-width: 1440px;
+  width: 100%;
+}
+
+.guides__title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 32px;
+  font-weight: 600;
+  color: #201f25;
+}
+
+.guides__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 10px;
+}

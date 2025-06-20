@@ -17,11 +17,7 @@
 
       <nav>
         <ul [ngClass]="{'active': menuActive}" id="ul">
-          <li><a [routerLink]="['/']" (click)="closeMenu()">Home</a></li>
-          <li><a [routerLink]="['/about']" (click)="closeMenu()">Sobre</a></li>
-          <li><a [routerLink]="['/portfolio']" (click)="closeMenu()">Portfólio</a></li>
-          <li><a [routerLink]="['/blog']" (click)="closeMenu()">Blog</a></li>
-          <li><a [routerLink]="['/contact']" (click)="closeMenu()">Contato</a></li>
+          <li><a routerLink="/" (click)="closeMenu()">Home</a></li>
         </ul>
       </nav>
     </div>
