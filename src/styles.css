@@ -9,14 +9,25 @@ body {
   font-family: 'Raleway', sans-serif;
   overflow-y: scroll;
   text-decoration: none;
+  background-color: #f3f5f3;
 }
+
 @font-face {
   font-family: MRROBOT;
   src: url('/assets/font/MRROBOT.ttf');
 }
+
 .container {
   max-width: 1440px;
   width: 100%;
+}
+
+header .container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 @keyframes up {

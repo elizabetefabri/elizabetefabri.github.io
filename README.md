@@ -36,37 +36,8 @@ ng build --base-href "https://elizabetefabri.github.io/"
 npx angular-cli-ghpages --dir=dist/frontend
 ```
 
-ng g c pages/guides/aws-practitioner/mapa-mental
+
 ng g c pages/guides/aws-practitioner/guia-estudo
-ng g c pages/guides/aws-practitioner/computacao-nuvem
-ng g c pages/guides/aws-practitioner/iam
-ng g c pages/guides/aws-practitioner/ec2
-ng g c pages/guides/aws-practitioner/armazenamento-ec2
-ng g c pages/guides/aws-practitioner/balanceamento-dimensionamento
-ng g c pages/guides/aws-practitioner/amazon-s3
-
-ng g c pages/guides/aws-practitioner/db-analytics
-ng g c pages/guides/aws-practitioner/compute
-ng g c pages/guides/aws-practitioner/infra-escala
-ng g c pages/guides/aws-practitioner/infra-global
-ng g c pages/guides/aws-practitioner/integracao-nuvem
-ng g c pages/guides/aws-practitioner/monitoramento
-ng g c pages/guides/aws-practitioner/vpc
-ng g c pages/guides/aws-practitioner/seguranca
-ng g c pages/guides/aws-practitioner/machine-learning
-ng g c pages/guides/aws-practitioner/gerenciamento
-ng g c pages/guides/aws-practitioner/identidade
-ng g c pages/guides/aws-practitioner/outros-servicos
-ng g c pages/guides/aws-practitioner/arquitetura-ecossistema
-
-<a routerLink="./mapa">Mapa mental para delinear tópicos essenciais</a>
-<a routerLink="./guia">Guia de estudo</a>
-<a routerLink="./nuvem">Computação em Nuvem</a>
-<a routerLink="./iam">IAM: Acesso e Gerenciamento de Identidade</a>
-<a routerLink="./ec2">EC2: Máquinas Virtuais</a>
-<a routerLink="./storage-ec2">Armazenamento de instância EC2</a>
-<a routerLink="./balanceamento">Grupos de balanceamento e dimensionamento automático</a>
-<a routerLink="./s3">Amazon S3</a>
 
 <a routerLink="./db-analytics">Bancos de dados e análises</a>
 <a routerLink="./compute">Outras Seções de Computação</a>

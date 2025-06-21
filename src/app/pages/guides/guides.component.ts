@@ -27,7 +27,7 @@ guides = [
   },
   {
     title: 'Guia de estudo Datadog',
-    description: 'Automatize sua observabilidade e monitore sua infraestrutura com Datadog.',
+    description: 'Automatize sua observabilidade e monitore sua infraestrutura.',
     link: '/datadog',
     image: 'assets/icons/datadog-foudations.png'
   }

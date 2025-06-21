@@ -1,0 +1,144 @@
+/* Início Serviços Section */
+#servicos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+h2.servico__title {
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #201f25;
+  line-height: 1.2;
+}
+
+#servicos .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 32px;
+  justify-content: space-between;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #141313;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.iconHolder {
+  height: 60px;
+  width: 60px;
+  margin-bottom: 16px;
+  padding: 10px 15px;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #FFD0D6;
+}
+
+.iconHolder img {
+  height: 40px;
+  width: 40px;
+}
+
+.service h4 {
+  color: #1a1a1a;
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.service p {
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #servicos {
+    padding: 50px 16px;
+  }
+
+  #servicos h2 {
+    font-size: 24px;
+  }
+
+  .servico__title {
+    margin-bottom: 50px;
+    margin-top: -10px;
+    font-size: 18px;
+  }
+
+  #servicos .container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 16px;
+  }
+
+  .iconHolder {
+    margin-bottom: 12px;
+  }
+
+  .service h4 {
+    font-size: 18px;
+  }
+
+  .service p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  #servicos {
+    padding: 40px 16px;
+  }
+
+  #servicos h2 {
+    font-size: 20px;
+  }
+
+  .servico__title {
+    margin-bottom: 40px;
+    margin-top: -10px;
+    font-size: 16px;
+  }
+
+  #servicos .container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 12px;
+  }
+
+  .iconHolder {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 8px;
+  }
+
+  .iconHolder img {
+    height: 32px;
+    width: 32px;
+  }
+
+  .service h4 {
+    font-size: 16px;
+  }
+
+  .service p {
+    font-size: 14px;
+  }
+}
+
+/* Fim Serviços Section */

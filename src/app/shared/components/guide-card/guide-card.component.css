@@ -2,6 +2,11 @@
   text-decoration: none;
   color: inherit;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 mat-card {
@@ -19,14 +24,15 @@ mat-card {
   cursor: pointer;
   position: relative;
 
-  width: 280px;
-  min-height: 300px;
+  max-width: 350px;
+  height: 300px;
   padding: 16px 16px 20px;
 }
 
 .guide-card mat-card:hover {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   transform: translateY(-4px);
+  transition: all 0.3s ease;
 }
 
 .guide-card__badge {
@@ -35,7 +41,7 @@ mat-card {
   right: 0;
   width: 6px;
   height: 100%;
-  background-color: #FF9091;
+  background-color: #ff9091;
   border-radius: 0 12px 12px 0;
 }
 
@@ -78,15 +84,10 @@ mat-card-content p {
 }
 
 .guide-card__link {
-  color: #FF9091;
+  color: #ff9091;
   font-weight: 600;
   font-size: 14px;
   text-decoration: none;
 }
 
-@media (max-width: 768px) {
-  .guide-card mat-card {
-    width: 100%;
-    min-height: unset;
-  }
-}
+

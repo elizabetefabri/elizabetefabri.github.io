@@ -1,0 +1,60 @@
+/* 🌐 Container principal */
+.guide-index {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.guide-index__container {
+  max-width: 500px;
+  width: 100%;
+}
+
+/* 🎯 Título */
+.guide-index__title {
+  text-align: left;
+  margin-bottom: 30px;
+  color: #201f25;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+/* 📄 Lista principal */
+.guide-index__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.guide-index__list > li {
+  margin-bottom: 16px;
+  line-height: 1.5;
+  font-size: 17px;
+}
+
+/* 📑 Sublista */
+.guide-index__sublist {
+  padding-left: 20px;
+  margin-top: 4px;
+}
+
+.guide-index__sublist li {
+  color: #333;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+/* 🔗 Links */
+.guide-index__list a {
+  color: #007acc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  font-size: 16px;
+}
+
+.guide-index__list a:hover {
+  text-decoration: underline;
+  color: #005f99;
+}

@@ -2,9 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 40px 20px;
-  background-color: #f3f5f3;
-  border-top: 1px solid #FF9091;
+  padding: 20px 20px;
 }
 
 .guides__container {
@@ -14,13 +12,16 @@
 
 .guides__title {
   text-align: center;
-  margin-bottom: 10px;
-  font-size: 32px;
-  font-weight: 600;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-weight: 700;
   color: #201f25;
+  line-height: 1.2;
 }
 
-.guides__grid {
+
+/* .guides__grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -28,4 +29,16 @@
   max-width: 1440px;
   margin: 0 auto;
   padding: 10px;
+} */
+
+.guides__grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 10px;
+  flex-direction: row;
+  align-content: space-between;
+  align-items: center;
 }

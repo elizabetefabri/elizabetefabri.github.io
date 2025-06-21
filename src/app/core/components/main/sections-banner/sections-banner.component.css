@@ -1,0 +1,87 @@
+
+section {
+  padding: 50px 20px;
+}
+
+/* Início Banner Section */
+
+#banner {
+  height: calc(60vh - 84px);
+  max-width: 100vw;
+  max-width: 100vw;
+  background-image: url(https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  padding: 0;
+  text-align: center;
+}
+
+
+#banner div {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 10px;
+}
+#banner h1 {
+  color: #fd8891;
+  font-size: 2.5em; /* Use em ou rem em vez de valor fixo em px */
+  animation-delay: 0.4s;
+  line-height: 1.375em;
+}
+
+#banner p {
+  margin-top: 15px;
+  font-size: 25px;
+  animation-delay: 0.7s;
+}
+#banner span {
+  animation-delay: 1s;
+  text-align: center;
+}
+#banner a {
+  display: inline-block;
+  padding: 15px 5px;
+}
+#banner img {
+  height: 30px;
+}
+
+@media (max-width: 374px) {
+  header {
+    padding: 20px 10px;
+  }
+
+  #banner {
+    height: calc(60vh - 76px);
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .menu ul {
+    top: 70px;
+    padding: 20px 10px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+  #banner > h1 {
+    font-size: 20px; /* Ajuste o valor conforme necessário para telas menores */
+  }
+  #banner p {
+    font-size: 20px;
+  }
+}

@@ -30,6 +30,7 @@
 .guide-index__list > li {
   margin-bottom: 14px;
   line-height: 1.4;
+  font-size: 15px;
 }
 
 /* Sublistas */
@@ -47,8 +48,9 @@
 .guide-index__list a {
   color: #007acc;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   transition: color 0.2s ease;
+  font-size: 18px;
 }
 
 .guide-index__list a:hover {

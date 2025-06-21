@@ -13,6 +13,16 @@ import { MapaMentalComponent } from '../pages/guides/aws-practitioner/mapa-menta
 import { AwsSolutionsArchitectComponent } from '../pages/guides/aws-solutions-architect/aws-solutions-architect.component';
 import { DatadogComponent } from '../pages/guides/datadog/datadog.component';
 import { KubernetesCkaComponent } from '../pages/guides/kubernetes-cka/kubernetes-cka.component';
+import { RouterModule } from '@angular/router';
+import { DbAnalyticsComponent } from '../pages/guides/aws-practitioner/db-analytics/db-analytics.component';
+import { InfraEscalaComponent } from '../pages/guides/aws-practitioner/infra-escala/infra-escala.component';
+import { InfraGlobalComponent } from '../pages/guides/aws-practitioner/infra-global/infra-global.component';
+import { IntegracaoNuvemComponent } from '../pages/guides/aws-practitioner/integracao-nuvem/integracao-nuvem.component';
+import { MonitoramentoComponent } from '../pages/guides/aws-practitioner/monitoramento/monitoramento.component';
+import { VpcComponent } from '../pages/guides/aws-practitioner/vpc/vpc.component';
+import { SegurancaComponent } from '../pages/guides/aws-practitioner/seguranca/seguranca.component';
+import { GerenciamentoComponent } from '../pages/guides/aws-practitioner/gerenciamento/gerenciamento.component';
+import { IdentidadeComponent } from '../pages/guides/aws-practitioner/identidade/identidade.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +36,21 @@ import { KubernetesCkaComponent } from '../pages/guides/kubernetes-cka/kubernete
     BalanceamentoDimensionamentoComponent,
     AmazonS3Component,
     KubernetesCkaComponent,
-    DatadogComponent
+    DatadogComponent,
+    DbAnalyticsComponent,
+    InfraEscalaComponent,
+    InfraGlobalComponent,
+    IntegracaoNuvemComponent,
+    MonitoramentoComponent,
+    VpcComponent,
+    SegurancaComponent,
+    GerenciamentoComponent,
+    IdentidadeComponent
   ],
   imports: [
     CommonModule,
-    ComponentesMaterialModule
+    ComponentesMaterialModule,
+    RouterModule
   ]
 })
 export class ComponentesGuideModule { }

@@ -22,7 +22,7 @@ const routes: Routes = [
   { path: 'datadog', component: DatadogComponent },
   { path: 'kubernetes-cka', component: KubernetesCkaComponent },
   { path: 'mapa', component: MapaMentalComponent },
-  { path: 'nuvem', component: ComputacaoNuvemComponent },
+  { path: 'computacao-nuvem', component: ComputacaoNuvemComponent },
   { path: 'iam', component: IamComponent },
   { path: 'ec2', component: Ec2Component },
   { path: 'storage-ec2', component: ArmazenamentoEc2Component },

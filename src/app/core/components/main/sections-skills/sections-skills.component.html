@@ -1,0 +1,10 @@
+<div class="container__skills">
+  <h2 class="skills__title">{{ titleSkills }}</h2>
+  <ul>
+    <li *ngFor="let skill of skills">
+      <a [href]="skill.link" target="_blank">
+        <img [src]="skill.img" [alt]="skill.alt" />
+      </a>
+    </li>
+  </ul>
+</div>

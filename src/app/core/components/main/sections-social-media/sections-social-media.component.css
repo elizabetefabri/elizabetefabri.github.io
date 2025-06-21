@@ -1,0 +1,28 @@
+.container__sobre-media {
+  margin: 1.5rem 0;
+}
+
+.container__sobre-media ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  list-style: none;
+}
+
+.container__sobre-media li {
+  padding: 10px;
+  background: rgba(32, 29, 137, 0.05);
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.container__sobre-media li:last-child {
+  margin-right: 0;
+}
+
+.container__sobre-media img {
+  color: #d9d9d9;
+  width: 30px;
+  height: 30px;
+}
