@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-sections-sobre',
-  templateUrl: './sections-sobre.component.html',
-  styleUrls: ['./sections-sobre.component.css'],
+    selector: 'app-sections-sobre',
+    templateUrl: './sections-sobre.component.html',
+    styleUrls: ['./sections-sobre.component.css'],
+    standalone: false
 })
 export class SectionsSobreComponent {
   @Input()

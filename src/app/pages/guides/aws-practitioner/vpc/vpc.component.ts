@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-vpc',
-  templateUrl: './vpc.component.html',
-  styleUrls: ['./vpc.component.css']
+    selector: 'app-vpc',
+    templateUrl: './vpc.component.html',
+    styleUrls: ['./vpc.component.css'],
+    standalone: false
 })
 export class VpcComponent {
 

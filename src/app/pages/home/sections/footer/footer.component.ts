@@ -2,9 +2,10 @@ import { Component, Input } from '@angular/core';
 import type { SocialMediaLink } from 'src/app/shared/models/social-media.model';
 
 @Component({
-  selector: 'app-footer',
-  templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.css']
+    selector: 'app-footer',
+    templateUrl: './footer.component.html',
+    styleUrls: ['./footer.component.css'],
+    standalone: false
 })
 export class FooterComponent {
   @Input() footerCopyright = "Copyright © 2025";

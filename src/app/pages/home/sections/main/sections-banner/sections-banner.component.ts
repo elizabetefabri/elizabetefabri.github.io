@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-sections-banner',
-  templateUrl: './sections-banner.component.html',
-  styleUrls: ['./sections-banner.component.css'],
+    selector: 'app-sections-banner',
+    templateUrl: './sections-banner.component.html',
+    styleUrls: ['./sections-banner.component.css'],
+    standalone: false
 })
 export class SectionsBannerComponent {
   @Input()

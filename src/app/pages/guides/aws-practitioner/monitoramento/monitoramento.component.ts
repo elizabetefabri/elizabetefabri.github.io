@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-monitoramento',
-  templateUrl: './monitoramento.component.html',
-  styleUrls: ['./monitoramento.component.css']
+    selector: 'app-monitoramento',
+    templateUrl: './monitoramento.component.html',
+    styleUrls: ['./monitoramento.component.css'],
+    standalone: false
 })
 export class MonitoramentoComponent {
 

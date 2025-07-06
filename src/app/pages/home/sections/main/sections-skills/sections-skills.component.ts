@@ -7,9 +7,10 @@ export interface Skill {
 }
 
 @Component({
-  selector: 'app-sections-skills',
-  templateUrl: './sections-skills.component.html',
-  styleUrls: ['./sections-skills.component.css'],
+    selector: 'app-sections-skills',
+    templateUrl: './sections-skills.component.html',
+    styleUrls: ['./sections-skills.component.css'],
+    standalone: false
 })
 export class SectionsSkillsComponent implements OnInit {
   @Input() titleSkills: string = '';
