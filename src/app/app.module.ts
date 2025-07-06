@@ -1,4 +1,4 @@
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -16,30 +16,21 @@ import { ComponentesMaterialModule } from './modules/componentes-material/compon
 import { ComponentesProjetosModule } from './modules/componentes-projetos/componentes-projetos.module';
 import { ComponentesLayoutModule } from './modules/componentes-layout/componentes-layout.module';
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    CardComponent,
-    GuidesComponent
-  ],
-  imports: [
-    AppRoutingModule,
-    BrowserModule,
-    BrowserAnimationsModule,
-    ComponentesMaterialModule,
-    ComponentesGuideModule,
-    ComponentesProjetosModule,
-    ComponentesLayoutModule,
-    FormsModule,
-    HttpClientModule,
-    ReactiveFormsModule
-  ],
-  exports:[
-
-  ],
-  providers: [],
-  bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
-})
+@NgModule({ declarations: [
+        AppComponent,
+        HomeComponent,
+        CardComponent,
+        GuidesComponent
+    ],
+    exports: [],
+    bootstrap: [AppComponent],
+    schemas: [CUSTOM_ELEMENTS_SCHEMA], imports: [AppRoutingModule,
+        BrowserModule,
+        BrowserAnimationsModule,
+        ComponentesMaterialModule,
+        ComponentesGuideModule,
+        ComponentesProjetosModule,
+        ComponentesLayoutModule,
+        FormsModule,
+        ReactiveFormsModule], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule { }
