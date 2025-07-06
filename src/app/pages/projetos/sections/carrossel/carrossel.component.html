@@ -1,0 +1,19 @@
+<h2 class="skills__title">Meus Projetos</h2>
+
+<section class="carrossel-container">
+  <ngx-slick-carousel class="carousel" [config]="slideConfig">
+    <div ngxSlickItem *ngFor="let projeto of projetos" class="card-wrapper">
+      <div class="card">
+        <img [src]="projeto.imagem" alt="Imagem do projeto" />
+        <div class="botoes">
+          <a [href]="projeto.github" target="_blank">
+            <button>GitHub</button>
+          </a>
+          <a [href]="projeto.site" target="_blank">
+            <button>Site</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </ngx-slick-carousel>
+</section>

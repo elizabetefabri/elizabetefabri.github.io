@@ -1,11 +1,13 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { Markmap } from 'markmap-view';
 
 @Component({
     selector: 'app-mapa-mental',
     templateUrl: './mapa-mental.component.html',
     styleUrls: ['./mapa-mental.component.css'],
-    standalone: false
+    standalone: true,
+    imports: [RouterModule]
 })
 export class MapaMentalComponent implements AfterViewInit {
   @ViewChild('markmap') container!: ElementRef;

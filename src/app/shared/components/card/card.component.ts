@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
     selector: 'app-card',
     templateUrl: './card.component.html',
     styleUrls: ['./card.component.css'],
-    standalone: false
+    standalone: true
 })
 export class CardComponent {
 

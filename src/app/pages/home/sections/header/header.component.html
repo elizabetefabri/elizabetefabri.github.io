@@ -10,7 +10,14 @@
     </div>
 
     <div class="menu">
-      <div class="menuMobile" (click)="toggleMenu()" aria-label="Toggle menu">
+      <div
+        class="menuMobile"
+        (click)="toggleMenu()"
+        (keydown.enter)="toggleMenu()"
+        tabindex="0"
+        role="button"
+        aria-label="Toggle menu"
+>
         <div></div>
         <div></div>
         <div></div>

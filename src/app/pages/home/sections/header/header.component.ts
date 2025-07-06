@@ -1,10 +1,18 @@
 import { Component } from '@angular/core';
+import { DivComponent } from '../div/div.component';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
     selector: 'app-header',
     templateUrl: './header.component.html',
     styleUrls: ['./header.component.css'],
-    standalone: false
+    imports: [
+      DivComponent,
+      CommonModule,
+      RouterModule
+    ],
+    standalone: true
 })
 export class HeaderComponent {
   menuActive = false;

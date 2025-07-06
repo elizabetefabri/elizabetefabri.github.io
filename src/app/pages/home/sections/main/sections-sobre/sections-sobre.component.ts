@@ -1,10 +1,16 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
     selector: 'app-sections-sobre',
     templateUrl: './sections-sobre.component.html',
     styleUrls: ['./sections-sobre.component.css'],
-    standalone: false
+    standalone: true,
+    imports: [
+      CommonModule,
+      RouterModule
+    ]
 })
 export class SectionsSobreComponent {
   @Input()

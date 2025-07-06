@@ -1,10 +1,16 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
     selector: 'app-sections-social-media',
     templateUrl: './sections-social-media.component.html',
     styleUrls: ['./sections-social-media.component.css'],
-    standalone: false
+    standalone: true,
+    imports: [
+      CommonModule,
+      RouterModule
+    ]
 })
 export class SectionsSocialMediaComponent  implements OnInit {
   @Input()

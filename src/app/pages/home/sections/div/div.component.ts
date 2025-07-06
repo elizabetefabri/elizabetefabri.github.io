@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
     selector: 'app-div',
     templateUrl: './div.component.html',
     styleUrls: ['./div.component.css'],
-    standalone: false
+    standalone: true
 })
 export class DivComponent {
 

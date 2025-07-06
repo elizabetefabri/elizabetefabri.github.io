@@ -1,10 +1,18 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { GuideCardComponent } from 'src/app/shared/components/guide-card/guide-card.component';
 
 @Component({
     selector: 'app-guides',
     templateUrl: './guides.component.html',
     styleUrls: ['./guides.component.css'],
-    standalone: false
+    standalone: true,
+    imports: [
+      GuideCardComponent,
+      CommonModule,
+      RouterModule
+    ]
 })
 export class GuidesComponent {
 guides = [
