@@ -43,7 +43,11 @@ Sempre que fizer alterações no projeto e quiser publicar no GitHub Pages, exec
 
 ```bash
 ng build --base-href "https://elizabetefabri.github.io/"
+
+ng build --base-href "https://github.com/elizabetefabri/elizabetefabri.github.io.git"
 npx angular-cli-ghpages --dir=dist/frontend
+
+ng build --prod --base-href "https://github.com/elizabetefabri/elizabetefabri.github.io.git"
 ```
 
 > **Atenção**: substitua `"frontend"` pelo nome correto do seu diretório de saída (`dist/<nome-do-projeto>`) gerado após o build.
