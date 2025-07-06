@@ -32,7 +32,7 @@ export class FooterComponent {
     },
     {
       image: "../../../assets/icons/download.png",
-      link: "",  // Preencha com o link de download, se houver.
+      link: "https://www.canva.com/design/DAGnEUyrgX8/pIJFgpBm91fm_UuJtTXcLg/edit?utm_content=DAGnEUyrgX8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",  // Preencha com o link de download, se houver.
       alt: "Download",
       title: "Faça o download aqui do meu currículo 💌"
     }

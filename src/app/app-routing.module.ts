@@ -28,6 +28,7 @@ const routes: Routes = [
   { path: 'storage-ec2', component: ArmazenamentoEc2Component },
   { path: 'balanceamento', component: BalanceamentoDimensionamentoComponent },
   { path: 's3', component: AmazonS3Component },
+  { path: "mapa-mental", component: MapaMentalComponent},
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 

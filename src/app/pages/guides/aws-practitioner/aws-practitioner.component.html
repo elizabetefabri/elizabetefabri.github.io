@@ -3,8 +3,8 @@
     <h1 class="guide-index__title">Índice</h1>
     <nav>
       <ul class="guide-index__list">
-        <li><a routerLink="./mapa">Mapa mental para delinear tópicos essenciais</a></li>
-        <li><a routerLink="./guia">Guia de estudo</a></li>
+        <li><a [routerLink]="['/mapa-mental']">Mapa mental para delinear tópicos essenciais</a></li>
+        <li><a [routerLink]="['/guia']">Guia de estudo</a></li>
 
         <li>
           <a [routerLink]="['/computacao-nuvem']">Computação em Nuvem</a>
@@ -14,7 +14,7 @@
         </li>
 
         <li>
-          <a routerLink="./iam">IAM: Acesso e Gerenciamento de Identidade</a>
+          <a [routerLink]="['/iam']">IAM: Acesso e Gerenciamento de Identidade</a>
           <ul class="guide-index__sublist">
             <li>O que é IAM? Autenticação multifator - MFA, Opções de dispositivos MFA na AWS, Como os usuários podem
               acessar a AWS? O que é a AWS CLI? O que é o AWS SDK?</li>
@@ -22,7 +22,7 @@
         </li>
 
         <li>
-          <a routerLink="./ec2">EC2: Máquinas Virtuais</a>
+          <a [routerLink]="['/ec2']">EC2: Máquinas Virtuais</a>
           <ul class="guide-index__sublist">
             <li>O que é Amazon EC2? Introdução aos grupos de segurança, Portas clássicas que você precisa conhecer,
               Tipos de inicialização de instância do EC2, Qual opção de compra é a certa para mim? Modelo de
@@ -31,7 +31,7 @@
         </li>
 
         <li>
-          <a routerLink="./storage-ec2">Armazenamento de instância EC2</a>
+          <a [routerLink]="['/storage-ec2']">Armazenamento de instância EC2</a>
           <ul class="guide-index__sublist">
             <li>Volumes EBS, EFS: Sistema de Arquivos Elástico, Acesso Infrequente EFS (EFS-IA), Amazon FSx – Visão
               Geral, Armazenamento de Instâncias EC2, Modelo de Responsabilidade Compartilhada para Armazenamento EC2
@@ -40,7 +40,7 @@
         </li>
 
         <li>
-          <a routerLink="./balanceamento">Grupos de balanceamento e dimensionamento automático</a>
+          <a [routerLink]="['/balanceamento']">Grupos de balanceamento e dimensionamento automático</a>
           <ul class="guide-index__sublist">
             <li>Escalabilidade e alta disponibilidade, Escalabilidade vertical, Escalabilidade horizontal, Alta
               disponibilidade, Alta disponibilidade e escalabilidade para EC2, Escalabilidade vs. Elasticidade (vs.
@@ -49,7 +49,7 @@
         </li>
 
         <li>
-          <a routerLink="./s3">Amazon S3</a>
+          <a [routerLink]="['/s3']">Amazon S3</a>
           <ul class="guide-index__sublist">
             <li>Casos de uso do S3, Visão geral do Amazon S3 - Buckets, Visão geral do Amazon S3 - Objetos, Sites do S3,
               Classes de armazenamento do S3, Bloqueio de objeto do S3 e Bloqueio de cofre Glacier, Modelo de
@@ -59,7 +59,7 @@
         </li>
         <!-- Banco de dados -->
         <li>
-          <a routerLink="./db-analytics">Bancos de dados e análises</a>
+          <a [routerLink]="['/db-analytics']">Bancos de dados e análises</a>
           <ul class="guide-index__sublist">
             <li>Introdução a bancos de dados, bancos de dados relacionais e NoSQL, responsabilidade compartilhada, visão
               geral do RDS, DynamoDB, Redshift, Aurora, ElastiCache, EMR, Athena, QuickSight, DocumentDB, Neptune, QLDB
@@ -69,7 +69,7 @@
 
         <!-- Computação -->
         <li>
-          <a routerLink="./compute">Outra Seção de Computação</a>
+          <a [routerLink]="['/compute']">Outra Seção de Computação</a>
           <ul class="guide-index__sublist">
             <li>Docker, ECS, Fargate, ECR, Serverless, AWS Lambda, API Gateway, AWS Batch, Batch vs Lambda, Amazon
               Lightsail, Resumo do Lambda</li>
@@ -78,7 +78,7 @@
 
         <!-- Infraestrutura em escala -->
         <li>
-          <a routerLink="./infra-escala">Implantando e gerenciando infraestrutura em escala</a>
+          <a [routerLink]="['/infra-escala']">Implantando e gerenciando infraestrutura em escala</a>
           <ul class="guide-index__sublist">
             <li>CloudFormation, CDK, Elastic Beanstalk, CodeDeploy, CodeCommit, CodeBuild, CodePipeline, CodeArtifact,
               CodeStar, Cloud9, Systems Manager (SSM), OpsWorks</li>
@@ -87,7 +87,7 @@
 
         <!-- Infraestrutura Global -->
         <li>
-          <a routerLink="./infra-global">Infraestrutura Global</a>
+          <a [routerLink]="['/infra-global']">Infraestrutura Global</a>
           <ul class="guide-index__sublist">
             <li>Route 53, CloudFront, Global Accelerator, Outposts, WaveLength, zonas locais, roteamento e aplicações
               globais</li>
@@ -96,7 +96,7 @@
 
         <!-- Integração -->
         <li>
-          <a routerLink="./integracao-nuvem">Integração em Nuvem</a>
+          <a [routerLink]="['/integracao-nuvem']">Integração em Nuvem</a>
           <ul class="guide-index__sublist">
             <li>Amazon SQS, Kinesis, SNS, MQ</li>
           </ul>
@@ -104,7 +104,7 @@
 
         <!-- Monitoramento -->
         <li>
-          <a routerLink="./monitoramento">Monitoramento de Nuvem</a>
+          <a [routerLink]="['/monitoramento']">Monitoramento de Nuvem</a>
           <ul class="guide-index__sublist">
             <li>CloudWatch, CloudTrail, X-Ray, CodeGuru, AWS Status, painel de integridade</li>
           </ul>
@@ -112,7 +112,7 @@
 
         <!-- VPC -->
         <li>
-          <a routerLink="./vpc">VPC</a>
+          <a [routerLink]="['/vpc']">VPC</a>
           <ul class="guide-index__sublist">
             <li>Sub-redes, gateways, ACL, grupos de segurança, VPC endpoints, VPN, Direct Connect, Transit Gateway</li>
           </ul>
@@ -120,7 +120,7 @@
 
         <!-- Segurança -->
         <li>
-          <a routerLink="./seguranca">Segurança e Conformidade</a>
+          <a [routerLink]="['/seguranca']">Segurança e Conformidade</a>
           <ul class="guide-index__sublist">
             <li>Responsabilidade compartilhada, Shield, WAF, KMS, ACM, Secrets Manager, GuardDuty, Inspector, Config,
               Macie, Security Hub, Detective, Abuse, IAM Access Analyzer</li>
@@ -129,7 +129,7 @@
 
         <!-- Machine Learning -->
         <li>
-          <a routerLink="./machine-learning">Aprendizado de Máquina</a>
+          <a [routerLink]="['/machine-learning']">Aprendizado de Máquina</a>
           <ul class="guide-index__sublist">
             <li>Rekognition, Transcribe, Polly, Translate, Lex, Comprehend, SageMaker, Forecast, Kendra, Personalize,
               Textract</li>
@@ -138,7 +138,7 @@
 
         <!-- Gerenciamento -->
         <li>
-          <a routerLink="./gerenciamento">Gerenciamento de contas, faturamento e suporte</a>
+          <a [routerLink]="['/gerenciamento']">Gerenciamento de contas, faturamento e suporte</a>
           <ul class="guide-index__sublist">
             <li>Organizações AWS, SCP, faturamento consolidado, RAM, catálogo, modelos de preço, entrega de conteúdo
               (CloudFront), custos AWS</li>
@@ -147,7 +147,7 @@
 
         <!-- Identidade -->
         <li>
-          <a routerLink="./identidade">Identidade Avançada</a>
+          <a [routerLink]="['/identidade']">Identidade Avançada</a>
           <ul class="guide-index__sublist">
             <li>STS, Cognito, Active Directory, IAM Identity Center</li>
           </ul>
@@ -155,7 +155,7 @@
 
         <!-- Outros serviços -->
         <li>
-          <a routerLink="./outros-servicos">Outros serviços da AWS</a>
+          <a [routerLink]="['/outros-servicos']">Outros serviços da AWS</a>
           <ul class="guide-index__sublist">
             <li>WorkSpaces, AppStream, Sumerian, IoT Core, Transcoder, AppSync, Amplify, Device Farm, Backup, DRS,
               DataSync, Migration Hub, Step Functions, Ground Station, Pinpoint</li>
@@ -164,7 +164,7 @@
 
         <!-- Arquitetura -->
         <li>
-          <a routerLink="./arquitetura-ecossistema">Arquitetura e Ecossistema da AWS</a>
+          <a [routerLink]="['/arquitetura-ecossistema']">Arquitetura e Ecossistema da AWS</a>
           <ul class="guide-index__sublist">
             <li>Well-Architected Framework, melhores práticas, 6 pilares, ferramentas Well-Architected, recursos
               gratuitos, AWS Marketplace</li>

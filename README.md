@@ -1,81 +1,71 @@
-# Cria o projeto (caso ainda não tenha)
-ng new meu-portfolio --routing --style=css
-cd meu-portfolio
+# 📁 Estrutura do Projeto Angular + GitHub Pages
 
-# Módulo Core e Componentes Globais
-ng g m app/core --module app
-ng g c ./core/components/header
-ng g c ./core/components/footer
-ng g c ./core/components/div
+Este projeto é um portfólio pessoal construído com Angular 16.2, utilizando módulos organizados para componentes reutilizáveis e páginas estruturadas.
 
-# Pages Principais
-ng g c ./pages/home
-ng g c ./pages/about
-ng g c ./pages/portfolio
-ng g c ./pages/blog
-ng g c ./pages/contact
-ng g c ./pages/resume
+---
 
-# Pages de Recursos Extras
-ng g c ./pages/extras/testimonials
-ng g c ./pages/extras/services-offered
-ng g c ./pages/extras/faq
+## 🚀 Comandos Úteis
 
-# Shared Components, Serviços e Models
-ng g c ./shared/components/card
-ng g s ./shared/services/data
-ng g class ./shared/models/social-media --type=model
+### ✅ Criar um componente e apontar diretamente para o módulo correspondente
 
-ng build --prod --base-href "https://github.com/elizabetefabri/elizabetefabri.github.io.git"
+```bash
+ng g c pages/home/sections/header --module=modules/componentes-layout/componentes-layout.module.ts
+```
+
+> 📝 Use esse padrão sempre que criar componentes das páginas, para garantir que eles sejam corretamente registrados no módulo apropriado.
+
+---
+
+### 🧪 Verificar onde o componente será criado (sem executar)
+
+```bash
+ng g c pages/home/sections/footer --dry-run
+```
+
+> Isso simula o comando sem gerar arquivos, útil para checar estrutura antes da criação real.
+
+---
+
+### 📦 Criar módulos organizados no diretório correto
+
+```bash
+ng g m modules/componentes-projetos --module=app
+```
+
+> O parâmetro `--module=app` garante que o módulo seja automaticamente importado no `AppModule`.
+
+---
 
 # 📍 Importante lembrar:
-- ## Toda vez que quiser atualizar seu site, rode:
+## 🛠️ Atualizar o site no GitHub Pages
+
+Sempre que fizer alterações no projeto e quiser publicar no GitHub Pages, execute os comandos abaixo:
 
 ```bash
 ng build --base-href "https://elizabetefabri.github.io/"
 npx angular-cli-ghpages --dir=dist/frontend
 ```
 
+> **Atenção**: substitua `"frontend"` pelo nome correto do seu diretório de saída (`dist/<nome-do-projeto>`) gerado após o build.
 
-ng g c pages/guides/aws-practitioner/guia-estudo
+---
 
-<a routerLink="./db-analytics">Bancos de dados e análises</a>
-<a routerLink="./compute">Outras Seções de Computação</a>
-<a routerLink="./infra-escala">Implantando e gerenciando infraestrutura em escala</a>
-<a routerLink="./infra-global">Infraestrutura Global</a>
-<a routerLink="./integracao-nuvem">Integração em Nuvem</a>
-<a routerLink="./monitoramento">Monitoramento de Nuvem</a>
-<a routerLink="./vpc">VPC</a>
-<a routerLink="./seguranca">Segurança e Conformidade</a>
-<a routerLink="./machine-learning">Aprendizado de Máquina</a>
-<a routerLink="./gerenciamento">Gerenciamento de contas, faturamento e suporte</a>
-<a routerLink="./identidade">Identidade Avançada</a>
-<a routerLink="./outros-servicos">Outros serviços da AWS</a>
-<a routerLink="./arquitetura-ecossistema">Arquitetura e Ecossistema da AWS</a>
+### ❌ Comando alternativo (não recomendado)
 
+```bash
+ng build --prod --base-href "https://github.com/elizabetefabri/elizabetefabri.github.io.git"
+```
 
-const routes: Routes = [
-  { path: '', component: AwsPractitionerComponent },
-  { path: 'mapa', component: MapaMentalComponent },
-  { path: 'guia', component: GuiaEstudoComponent },
-  { path: 'nuvem', component: ComputacaoNuvemComponent },
-  { path: 'iam', component: IamComponent },
-  { path: 'ec2', component: Ec2Component },
-  { path: 'storage-ec2', component: ArmazenamentoEc2Component },
-  { path: 'balanceamento', component: BalanceamentoDimensionamentoComponent },
-  { path: 's3', component: AmazonS3Component },
+> ⚠️ Esse comando utiliza um repositório Git como `base-href`, o que pode causar erro. Prefira o comando com a URL do GitHub Pages como no exemplo acima.
 
-  { path: 'db-analytics', component: DbAnalyticsComponent },
-  { path: 'compute', component: ComputeComponent },
-  { path: 'infra-escala', component: InfraEscalaComponent },
-  { path: 'infra-global', component: InfraGlobalComponent },
-  { path: 'integracao-nuvem', component: IntegracaoNuvemComponent },
-  { path: 'monitoramento', component: MonitoramentoComponent },
-  { path: 'vpc', component: VpcComponent },
-  { path: 'seguranca', component: SegurancaComponent },
-  { path: 'machine-learning', component: MachineLearningComponent },
-  { path: 'gerenciamento', component: GerenciamentoComponent },
-  { path: 'identidade', component: IdentidadeComponent },
-  { path: 'outros-servicos', component: OutrosServicosComponent },
-  { path: 'arquitetura-ecossistema', component: ArquiteturaEcossistemaComponent },
-];
+---
+
+## 📌 Organização dos módulos
+
+- `componentes-layout`: componentes visuais reutilizáveis da Home.
+- `componentes-material`: wrapper para os componentes do Angular Material.
+- `componentes-guides`: componentes usados nas páginas de guias.
+- `componentes-projetos`: seções de projetos pessoais.
+
+---
+

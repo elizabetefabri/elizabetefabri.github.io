@@ -4,11 +4,13 @@
   display: flex;
   justify-content: center;
   padding: 40px 20px;
+
 }
 
 .guide-index__container {
   max-width: 1000px;
   width: 100%;
+  background: #fefefe;
 }
 
 /* Título */
